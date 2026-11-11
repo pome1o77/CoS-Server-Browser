@@ -1,6 +1,6 @@
 # Creatures of Sonaria Server Browser
 
-A lightweight Windows application for browsing public servers in **Creatures of Sonaria** (Roblox).
+A Windows application for browsing public servers in **Creatures of Sonaria**.
 
 ## Features
 
