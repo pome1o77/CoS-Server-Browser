@@ -30,8 +30,8 @@ No Python installation is required to run the executable.
 
 ## Usage
 
-1. Download `CoS_Server_Browser.exe` from Releases.
-2. Run the executable.
+1. Download `CoS_Server_Browser.zip` from Releases.
+2. Run the `CoS_Server_Browser.exe`.
 3. Select Trade Realm or Hardcore Realm.
 4. Choose your preferred sorting and filtering options.
 5. Double-click a server or select it and click **Join selected**.
