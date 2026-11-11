@@ -1,4 +1,3 @@
-
 @echo off
 title CoS Server Browser - Build
 
@@ -9,6 +8,18 @@ echo =====================================
 echo.
 
 cd /d "%~dp0"
+
+set "SCRIPT=%~dp0cos_server_browser.py"
+
+if not exist "%SCRIPT%" (
+    echo.
+    echo ERROR: cos_server_browser.py was not found in this folder.
+    pause
+    exit /b 1
+)
+
+echo Found: cos_server_browser.py
+echo.
 
 echo Installing or updating PyInstaller...
 py -m pip install --upgrade pyinstaller
@@ -23,7 +34,7 @@ if errorlevel 1 (
 echo.
 echo Building EXE...
 
-py -m PyInstaller --noconfirm --clean --onefile --windowed --name "CoS_Server_Browser" "%~dp0cos_server_browser.py"
+py -m PyInstaller --noconfirm --clean --onefile --windowed --name "CoS_Server_Browser" "%SCRIPT%"
 
 if errorlevel 1 (
     echo.
